@@ -1,0 +1,5 @@
+export * from './event.service'
+export * from './event.model'
+export * from './restricted-words.vailidator'
+export * from './duration.pipe'
+export * from './events-resolver.service'

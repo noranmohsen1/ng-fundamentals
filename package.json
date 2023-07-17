@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "server": "node node_modules/ngf-server/server.js",
     "test": "ng test"
   },
   "private": true,
@@ -18,7 +19,10 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "ngf-bootstrap": "^0.0.5",
+    "ngf-server": "^1.0.3",
     "rxjs": "~7.8.0",
+    "toastr": "^2.1.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
@@ -27,6 +31,9 @@
     "@angular/cli": "~16.0.0",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
